@@ -1,0 +1,90 @@
+include resume-mixins.pug
+
+#main
+  #title
+    h1 Berk Karahan
+    .subtitle Data Enthusiast
+    .subtitle BSc-Industrial Engineer
+    .subtitle MSc-Engineering Business Management
+  .main-block
+    h2 #[i.fa.fa-folder-open] Projects
+
+    +item("Pythonic Web-Scraper", "Homebrew", null, null)
+      :markdown-it
+        - [Link](https://github.com/berkkarahan/sahibinden-scrape) to project.
+        - Multi-threaded.
+        - Web-scraper with pythonic barebones as much as possible(only Beatifulsoup as 3rd party).
+
+    +item("Predicting car prices", "Homebrew", null, null)
+      :markdown-it
+        - Data pipeline -> scrape data / data preprocessing / feature modelling / training / prediction.
+        - Gained hands on experience with;
+            - Dimensionality reduction(PCA)
+            - Outlier removal(naive and quantile analysis)
+            - Dealing with categorical variables.
+        - Python libs include but not limited to: numpy / pandas / sckit-learn / categorical_encoders / xgboost / tensorflow via keras.
+
+    +item("Spare Parts Inventory Management", "Otokar", null, null)
+      :markdown-it
+        - Project Flow;
+          - Export part historic transactions data from SAP.
+          - Decompose historic data to trend, seasonality and error components.
+          - Apply various methods for different part groups from forecast package in R by Rob Hyndman.
+        - R is mainly used as means for forecasting and finding optimal inventory policies using optimisation.
+
+    .main-block
+      h2 #[i.fa.fa-graduation-cap] Education
+
+      +item("MSc Engineering Business Management", "University of Warwick", "United Kingdom", "2015", "2014")
+        :markdown-it
+          - Wrote a dissertation on optimisation of process parameters for early systems design using discrete event simulation.
+            - Used utility functions to reduce multi-objective optimisation to single maximisation objective function.
+
+      +item("BSc Industrial Engineering", "Bilkent University", "Turkey",  "2014", "2010")
+        .description Probability, statistics, stochastic models, mathematical models and optimisation, improved decision making, multi objective optimisation.
+  .main-block.concise
+    h2 #[i.fa.fa-suitcase] Experiences
+
+    +item("Materials Planner", "FNSS", "Ankara / TURKEY", null, "Dec 2016")
+      :markdown-it
+        - Demand management.
+        - Configuration management using special bill of material system.
+        - Supply Chain Control through make-buy and source change request processes.
+
+    +item("Production Planning and Control Engineer", "Otokar", "Sakarya / TURKEY", "Dec 2016", "Feb 2016")
+      :markdown-it
+        - Shop floor planning and control of processes for military vehicles.
+        - Preparing, maintaining and controlling master production schedule and detailed production schedules over SAP.
+
+#sidebar
+  #contact.side-block
+    h1 Contact Info
+    ul
+      li #[i.fa.fa-linkedin] linkedin.com/in/berkkarahan
+      li #[i.fa.fa-envelope] berkkarahan00@gmail.com
+      li #[i.fa.fa-phone] +90 536 513 84 94
+
+  #skills.side-block
+    h1 Skills
+    ul
+      li Python - Intermediate
+      li R - Beginner / Intermediate
+      li MATLAB - Intermediate
+      li Java - Beginner / Intermediate
+    h1 Hands on experience with;
+    ul
+      li Python;
+      li Data manipulation(pandas & numpy)
+      li Machine learning(scikit-learn, xgboost, dask)
+    ul
+      li R;
+      li Data manipulation, statistical analysis, forecasting and evaluating forecasting policies.
+    h1 Working knowledge of;
+    ul
+      li Decision Trees
+      li SVM
+      li kNN
+      li Deep Neural Networks(Neurons, layers, activations, loss, backpropogation)
+
+style
+  include resume.scss
