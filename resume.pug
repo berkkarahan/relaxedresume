@@ -9,20 +9,9 @@ include resume-mixins.pug
   .main-block
     h2 #[i.fa.fa-folder-open] Projects
 
-    +item("Pythonic Web-Scraper", "Homebrew", null, null)
+    +item("Portfolio", "Homebrew", null, null)
       :markdown-it
-        - [Link](https://github.com/berkkarahan/sahibinden-scrape) to project.
-        - Multi-threaded.
-        - Web-scraper with pythonic barebones as much as possible(only Beatifulsoup as 3rd party).
-
-    +item("Predicting car prices", "Homebrew", null, null)
-      :markdown-it
-        - Data pipeline -> scrape data / data preprocessing / feature modelling / training / prediction.
-        - Gained hands on experience with;
-            - Dimensionality reduction(PCA)
-            - Outlier removal(naive and quantile analysis)
-            - Dealing with categorical variables.
-        - Python libs include but not limited to: numpy / pandas / sckit-learn / categorical_encoders / xgboost / tensorflow via keras.
+        - For a general overview of my projects / challenges please visit <https://bit.ly/bk_projects>(or simply my github).
 
     +item("Spare Parts Inventory Management", "Otokar", null, null)
       :markdown-it
@@ -34,6 +23,8 @@ include resume-mixins.pug
 
     .main-block
       h2 #[i.fa.fa-graduation-cap] Education
+      
+      +item("MSc Software Engineering", "METU - Middle East Technical University", "Turkey", "TBD", "2018")
 
       +item("MSc Engineering Business Management", "University of Warwick", "United Kingdom", "2015", "2014")
         :markdown-it
@@ -60,9 +51,10 @@ include resume-mixins.pug
   #contact.side-block
     h1 Contact Info
     ul
+      li #[i.fa.fa-github] github.com/berkkarahan
       li #[i.fa.fa-linkedin] linkedin.com/in/berkkarahan
-      li #[i.fa.fa-envelope] mail adrress
-      li #[i.fa.fa-phone] +90 999 999 99 99
+      li #[i.fa.fa-envelope] berrkarahan00#[i.fa.fa-google]mail
+      li #[i.fa.fa-phone] provided upon request
 
   #skills.side-block
     h1 Skills
@@ -71,6 +63,7 @@ include resume-mixins.pug
       li R - Beginner / Intermediate
       li MATLAB - Intermediate
       li Java - Beginner / Intermediate
+      li node.js - Beginner
     h1 Hands on experience with;
     ul
       li Python;
@@ -81,10 +74,10 @@ include resume-mixins.pug
       li Data manipulation, statistical analysis, forecasting and evaluating forecasting policies.
     h1 Working knowledge of;
     ul
-      li Decision Trees
-      li SVM
-      li kNN
-      li Deep Neural Networks(Neurons, layers, activations, loss, backpropogation)
+      li - Trees(Decision Trees & Random Forests)
+      li - SVM
+      li - kNN
+      li - Deep Neural Networks(Neurons, layers, activations, loss, backpropogation)
 
 style
   include resume.scss
